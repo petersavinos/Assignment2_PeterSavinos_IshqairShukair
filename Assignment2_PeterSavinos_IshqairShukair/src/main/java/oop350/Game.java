@@ -1,4 +1,7 @@
-import javax.swing.plaf.TextUI;
+package oop350;
+
+import oop350.model.*;
+import oop350.ui.TextUI;
 import java.util.concurrent.ConcurrentHashMap;
 
 /**
@@ -26,7 +29,7 @@ public class Game {
         Door.connect(chambers[2], chambers[3], new Monster("Spider",3,0,5)); // door 3 is guarded by a spider
         Door.connect(chambers[3], chambers[4]);
 
-        Character player = new Wizard ("Gandalf"); // playable character is created as a wizard named Gandalf
+        oop350.model.Character player = new Wizard("Gandalf");// playable character is created as a wizard named Gandalf
 
         Dungeon d = new Dungeon(player, chambers[0], chambers[4]); // create a dungeon with the player, starting chamber, and goal chamber
         new TextUI().play(d); // starts the game

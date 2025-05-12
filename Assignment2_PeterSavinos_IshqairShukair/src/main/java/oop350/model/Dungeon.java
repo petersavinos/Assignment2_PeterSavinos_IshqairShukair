@@ -1,35 +1,38 @@
 package oop350.model;
 
-
 import oop350.action.*;
 import java.util.*;
 
-
-
 /**
- * Dungeon class that manages the state of the game. It manages the loations of the player,
- * the chamber which is the goal, the actions and movements a player can make, and the items and doors.
+ * The Dungeon class manages the game state:
+ * - Tracks the player
+ * - Tracks the current and goal chambers
+ * - Generates available actions each turn
  */
 public final class Dungeon {
+    // The player character currently navigating the dungeon
+    private final Character player;
 
-    private final Character player; // playable character
-    private final Chamber goal; // the target and final destination which the player must reach
-    private Chamber current; // the chamber that the player is currently in
+    // The chamber that represents the goal or exit
+    private final Chamber goal;
+
+    // The chamber the player is currently in
+    private Chamber current;
 
     /**
-     * Constructor that initializes the player, start chamber, and gaol chamber
-     * @param player playable character
-     * @param entry start chamber
-     * @param goal final goal chamber
+     * Constructs a new dungeon.
+     * @param player The player character
+     * @param entry The starting chamber
+     * @param goal The final goal chamber
      */
     public Dungeon(Character player, Chamber entry, Chamber goal) {
         this.player = player;
         this.current = entry;
-        this. goal = goal;
+        this.goal = goal;
     }
 
     /**
-     * Method to get the current chamber which the player is in
+     * Gets the chamber the player is currently in.
      * @return the current chamber
      */
     public Chamber getCurrentChamber() {
@@ -37,41 +40,47 @@ public final class Dungeon {
     }
 
     /**
-     * Method to set the current chamber as the player moves into new chambers
-     * @param c the new current chamber
+     * Updates the player's current chamber.
+     * Used when moving through a door.
+     * @param c the new chamber to set
      */
     public void setCurrentChamber(Chamber c) {
-        current = c;
+        this.current = c;
     }
 
     /**
-     * Method to see if the dungeon is completed.
-     * The player either reachs the goal chamber or the player died
-     * @return true if dungeon is finished, false if not
+     * Checks if the game is over.
+     * The game ends if the player reaches the goal or dies.
+     * @return true if game is finished
      */
     public boolean isFinished() {
         return current == goal || player.isDead();
     }
 
     /**
-     * Method that returns a list of the available actions a player can get from the current chamber they are in
-     * The player can either fight a monster that guards a door,
-     * Move through an unguarded door,
-     * Pick up items from the current chamber.
-     * @return A list of objects (Action) that the player can do
+     * Generates the list of possible actions for the player:
+     * - Fight: if a monster guards a door
+     * - Move: if the door is unguarded
+     * - Pick: if items are present in the current chamber
+     * @return list of available actions
      */
-    public List<Action> getActions(){
+    public List<Action> getActions() {
         List<Action> acts = new ArrayList<>();
-        for (Door d : current.getDoors()) { // checks if the doors in current chamber are guarded
-            if(d.getGuard() != null) { // if the door is guarded then the player can fight the monster
+
+        // Add fight or move actions for each door
+        for (Door d : current.getDoors()) {
+            if (d.getGuard() != null) {
                 acts.add(new Fight(player, d));
             } else {
-                acts.add(new Move(this.d)); // otherwise the player can move through the door
+                acts.add(new Move(this, d));
             }
         }
+
+        // Add pickup actions for each item in the room
         for (Item i : current.getItems()) {
-            acts.add(new Pick(player, i, current)); // player can pick up items in the current chamber
+            acts.add(new Pick(player, i, current));
         }
+
         return acts;
     }
 }

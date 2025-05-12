@@ -4,7 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="57f05852-ffdc-4426-a633-fae33215f23b" name="Changes" comment="Initial Commit" />
+    <list default="true" id="57f05852-ffdc-4426-a633-fae33215f23b" name="Changes" comment="defines a warrior type player with specific starting stats">
+      <change afterPath="$PROJECT_DIR$/Assignment2_IShukair_PSavinos.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assignment2_PeterSavinos_IshqairShukair/src/main/java/oop350/model/Character.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assignment2_PeterSavinos_IshqairShukair/src/main/java/oop350/model/Wizard.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assignment2_PeterSavinos_IshqairShukair/src/main/java/oop350/util/Dice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assignment2_PeterSavinos_IshqairShukair/src/test/java/oop350/DungeonTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment2_PeterSavinos_IshqairShukair/src/main/java/oop350/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment2_PeterSavinos_IshqairShukair/src/main/java/oop350/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment2_PeterSavinos_IshqairShukair/src/main/java/oop350/action/Fight.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment2_PeterSavinos_IshqairShukair/src/main/java/oop350/action/Fight.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment2_PeterSavinos_IshqairShukair/src/main/java/oop350/action/Move.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment2_PeterSavinos_IshqairShukair/src/main/java/oop350/action/Move.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment2_PeterSavinos_IshqairShukair/src/main/java/oop350/action/Pick.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment2_PeterSavinos_IshqairShukair/src/main/java/oop350/action/Pick.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment2_PeterSavinos_IshqairShukair/src/main/java/oop350/model/Dungeon.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment2_PeterSavinos_IshqairShukair/src/main/java/oop350/model/Dungeon.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,18 +36,123 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/petersavinos/Assignment2_PeterSavinos_IshqairShukair.git",
+    "accountId": "41d02509-2dd2-4b1e-a580-24a5b0e4eeba"
+  }
+}]]></component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "JUnit.DungeonTest.executor": "Run",
+    "Maven.Assignment2_IShukair_PSavinos [clean].executor": "Run",
+    "Maven.Assignment2_IShukair_PSavinos [compile].executor": "Run",
+    "Maven.Assignment2_IShukair_PSavinos [test].executor": "Run",
+    "Maven.Assignment2_IShukair_PSavinos [validate].executor": "Run",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/Ishqa/IdeaProjects/Assignment2_PeterSavinos_IshqairShukair",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Ishqa\IdeaProjects\Assignment2_PeterSavinos_IshqairShukair" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Ishqa\IdeaProjects\Assignment2_PeterSavinos_IshqairShukair\Assignment2_PeterSavinos_IshqairShukair\src" />
+      <recent name="C:\Users\Ishqa\IdeaProjects\Assignment2_PeterSavinos_IshqairShukair\Assignment2_PeterSavinos_IshqairShukair\src\main\java\oop350" />
+      <recent name="C:\Users\Ishqa\IdeaProjects\Assignment2_PeterSavinos_IshqairShukair\Assignment2_PeterSavinos_IshqairShukair\src\main\java\oop350\ui" />
+      <recent name="C:\Users\Ishqa\IdeaProjects\Assignment2_PeterSavinos_IshqairShukair\Assignment2_PeterSavinos_IshqairShukair\src\main\java\oop350\model" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="DungeonTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Assignment2_IShukair_PSavinos" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="oop350.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="oop350" />
+      <option name="MAIN_CLASS_NAME" value="oop350.DungeonTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="Assignment2_PeterSavinos_IshqairShukair" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="Assignment2_PeterSavinos_IshqairShukair" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.DungeonTest" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="TaskManager">
+    <task id="LOCAL-00001" summary="added more structure in the code and added a action java interface which defines the contract that any class must follow">
+      <option name="closed" value="true" />
+      <created>1747014346956</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1747014346956</updated>
+    </task>
+    <task id="LOCAL-00002" summary="fixed adjusted java files and added fight java class which allows you to fight the moster guarding the door">
+      <option name="closed" value="true" />
+      <created>1747015921701</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1747015921701</updated>
+    </task>
+    <task id="LOCAL-00003" summary="added pick class that allows you to pick up items and added a move class that allows you to move through the door. finally added axe as the weapon">
+      <option name="closed" value="true" />
+      <created>1747017941719</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1747017941719</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Item class represents an item that gives a +2 bonus to Craft.">
+      <option name="closed" value="true" />
+      <created>1747018377363</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1747018377363</updated>
+    </task>
+    <task id="LOCAL-00005" summary="defines a warrior type player with specific starting stats">
+      <option name="closed" value="true" />
+      <created>1747018853271</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1747018853272</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -47,6 +168,12 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial Commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial Commit" />
+    <MESSAGE value="idk" />
+    <MESSAGE value="added more structure in the code and added a action java interface which defines the contract that any class must follow" />
+    <MESSAGE value="fixed adjusted java files and added fight java class which allows you to fight the moster guarding the door" />
+    <MESSAGE value="added pick class that allows you to pick up items and added a move class that allows you to move through the door. finally added axe as the weapon" />
+    <MESSAGE value="Item class represents an item that gives a +2 bonus to Craft." />
+    <MESSAGE value="defines a warrior type player with specific starting stats" />
+    <option name="LAST_COMMIT_MESSAGE" value="defines a warrior type player with specific starting stats" />
   </component>
 </project>
