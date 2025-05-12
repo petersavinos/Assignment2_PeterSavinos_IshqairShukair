@@ -1,3 +1,4 @@
+package oop350.model;
 
 
 import java.util.*;

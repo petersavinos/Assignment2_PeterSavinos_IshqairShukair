@@ -1,3 +1,6 @@
+package oop350.model;
+
+
 /**
  * The Door class serves as a connector between two Chambers.
  * The Door can be guarded by a monster which the player will have to interact with.
@@ -22,7 +25,7 @@ public final class Door {
      * @param a First chamber that the door connects
      * @param b Second chamber that the door connects
      */
-    public static void connect(Chamber a, chamber b) {connect(a,b,null);}
+    public static void connect(Chamber a, Chamber b) {connect(a,b,null);}
 
     /**
      * method to connect the two chambers with a monster guard

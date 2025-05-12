@@ -1,3 +1,5 @@
+package oop350.model;
+
 /**
  * the Monster class serves as a representation of the guards that are blocking the doors throughout the dungeon.
  * Every Monster has a name, strength, craft, and health.
@@ -26,10 +28,7 @@ public class Monster {
      * Methods that rolls a random number on a di to determine the combat attack
      * @return the number rolled on the dice
      */
-    public int roll() {
-        return Dice.roll();
-    }
-
+    public int roll(){ return oop350.util.Dice.roll(); }
     /**
      * Method that reduces the amount of health of a monster given the damage
      * @param d the amount of damage taken

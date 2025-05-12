@@ -1,4 +1,9 @@
-import java.util.ArrayList;
+package oop350.model;
+
+
+import oop350.action.*;
+import java.util.*;
+
 
 
 /**
@@ -35,7 +40,7 @@ public final class Dungeon {
      * Method to set the current chamber as the player moves into new chambers
      * @param c the new current chamber
      */
-    void setCurrentChamber(Chamber c) {
+    public void setCurrentChamber(Chamber c) {
         current = c;
     }
 

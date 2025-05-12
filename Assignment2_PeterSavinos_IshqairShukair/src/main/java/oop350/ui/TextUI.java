@@ -1,5 +1,9 @@
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
+package oop350.ui;
+
+import oop350.model.*;
+import oop350.action.Action;
+import java.io.*;
+import java.util.List;
 
 public class TextUI {
     private final BufferedReader in = new BufferedReader(new InputStreamReader(System.in));

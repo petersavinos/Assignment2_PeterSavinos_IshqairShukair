@@ -1,3 +1,5 @@
+package oop350.model;
+
 /**
  * Item class serves as the items in the game.
  * Items can give boosts in strength or craft.
